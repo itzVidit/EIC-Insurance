@@ -1,59 +1,50 @@
-1.🚗 EIC Insurance Collapse Analysis Dashboard
+<h1 align="center" style="color: #FF5733; font-size: 2.5em; font-family: 'Arial', sans-serif;">
+  🚗 EIC Insurance: A Financial Collapse Analysis
+</h1>
+<p align="center">
+  **An interactive Power BI dashboard that tells the story of a catastrophic business failure, revealed through data.**
+</p>
 
-An interactive Power BI dashboard designed to investigate the financial downfall of EIC, a fictional motor insurance company, by analyzing underwriting performance, premium-to-claim dynamics, and customer behavior—enabling strategic insight into risk concentration and operational inefficiencies.
+---
 
-2.🔍 Project Purpose:
+### 🔍 Project Overview & Purpose
 
-This dashboard equips business, finance, and underwriting teams with a comprehensive view of EIC's key performance indicators (KPIs) including Premium Earned, Claims Paid, Underwriting Losses, and the Premium-to-Claims (P/C) Ratio. Through dynamic visuals, it reveals high-risk vehicle categories, claim behavior patterns, and the underlying causes of financial unsustainability that led to EIC’s closure.
+This project is a forensic data analysis of the financial collapse of EIC, a fictional motor insurance company. My goal was to move beyond the high-level numbers and expose the underlying causes of its failure. The dashboard I built serves as an interactive report for business, finance, and underwriting teams, revealing how **steady premium inflows masked a catastrophic accumulation of losses**. This project is a powerful case study in the consequences of ignoring key underwriting metrics.
 
-3.🛠 Tech Stack:
+---
 
-Built using the following tools and technologies:
+### 🛠 Tech Stack
 
-📊 Power BI Desktop – Core tool for data visualization, interactive reporting, and dashboard deployment
-📂 Power Query – Used for data transformation, filtering by policy type and time period
-🧠 DAX (Data Analysis Expressions) – Developed custom measures like Cumulative Loss, P/C Ratio, Average Premium, and dynamic tooltips
-🧮 Data Modeling – Established relationships among policy data, claim records, and a calendar table to ensure accurate time-series aggregation
-📁 File Format – .pbix used for development and .png exports for dashboard previews
+I developed this entire solution from the ground up, leveraging a robust analytics toolkit:
 
-4.📊 Data Source:
+* **📊 Power BI Desktop**: The core platform for data visualization and report design.
+* **📂 Power Query**: Used for data transformation, cleaning, and preparation, ensuring the data was reliable for analysis.
+* **🧠 DAX (Data Analysis Expressions)**: I created custom, powerful measures like **Cumulative Loss** and the **Premium-to-Claims (P/C) Ratio** to track the company's financial decline.
+* **🧮 Data Modeling**: I established critical relationships between policy data, claim records, and a custom calendar table, which was essential for accurate time-series analysis.
 
-Synthetic insurance dataset simulating operations of a mid-sized motor insurer. The data includes:
+---
 
-Premiums and claims at policy level
+### 💡 Key Discoveries & Features
 
-Time-stamped financial activity from 2014–2018
+The dashboard is structured to guide the user through the narrative of EIC's collapse. The key visuals act as evidence, telling a story of failure:
 
-Customer segmentation by gender, region, usage type, and vehicle type
+* **Executive KPI Cards**: Provide an immediate, high-level summary of the company's final operating condition, including total **Underwriting Loss**.
+* **Quarterly P/C Ratio**: This visual is the smoking gun. It clearly shows that claims began to consistently outpace premiums, marking the point of no return. Only one quarter ever had a favorable ratio.
+* **Cumulative Underwriting Loss Area Chart**: A dramatic visualization of the accelerating financial bleed that ultimately led to the company's closure.
+* **Premium vs Claim Scatter Plot**: I used this to expose the specific **risk-heavy vehicle categories** that were silently draining the company's profitability.
+* **Page Navigation**: A prominent button, “Explore the story 👉”, invites users to dive deeper into the analysis, creating a guided, narrative-driven experience.
 
-Quarter and year breakdowns through a custom calendar table
+---
 
-5.🎯 Goal of the Dashboard:
+### 🚀 Business Impact
 
-To build a clean, interactive Power BI report that illustrates the complete financial trajectory of EIC—from initial growth to collapse—by tracking loss-making trends, segment-specific performance, and quarterly deterioration of key insurance metrics. The dashboard is structured to enable drill-down analysis by category and support investigative business storytelling.
+This dashboard isn't just a report; it's a critical lesson. It demonstrates that steady revenue can be a deceptive metric. By visualizing the exact point where claims began to outpace premiums and identifying the segments responsible for the losses, this analysis offers a clear path from data to insight. It replaces static, fragmented reporting with a dynamic tool that empowers insurers to **act before it's too late**—by adjusting pricing, rebalancing portfolios, or exiting high-risk categories with precision.
 
-6.💡 Features & Highlights:
+---
 
-🔹 Key Visuals & Interactions:
+### Screenshots/Demo
 
-a. Executive KPI Cards: Display overall Premium Collected, Claims Paid, Underwriting Loss, and P/C Ratio, enabling quick assessment of EIC’s operating condition.
+![EIC Report Preview](https://github.com/itzVidit/EIC-Insurance/blob/main/EIC%20report.png)
 
-b. Quarterly P/C Ratio Column Chart: Visualizes underwriting efficiency over time, showing only one quarter with favorable ratios—Q2 2018.
 
-c. Cumulative Underwriting Loss Area Chart: Highlights the accelerating financial loss trend leading to company failure.
-
-d. Premium vs Claim Scatter Plot: Identifies segments with negative margins, exposing risk-heavy categories.
-
-e. Vehicle Type Breakdown (Bar Chart): Shows claim-prone vs. profit-generating vehicle types across the portfolio.
-
-f. Claims by Gender & Usage Type (Donut + Stacked Area): Provides demographic and usage-level segmentation of claims to uncover bias or behavioral trends.
-
-g. Page Navigation Button: “Explore the story 👉” button links users to a deeper analytical page, creating a narrative-driven flow.
-
-7.💼 Business Impact & Outcomes:
-
-This dashboard tells the story of EIC’s silent collapse—despite steady premium inflows, hidden underwriting losses accumulated quarter after quarter. By visualizing the exact point where claims began to outpace premiums and identifying the segments driving the losses, the report offers a clear path from data to insight. It replaces static reporting with interactive analytics, empowering insurers to act before it’s too late—by adjusting pricing, exiting high-risk categories, or rebalancing their portfolio with precision.
-
-8.Screenshot/Demo
-![Dashboard preview](https://github.com/itzVidit/EIC-Insurance/blob/main/EIC%20report.png)
 
